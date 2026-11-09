@@ -1,1 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamal Humagain - Assistant Professor of GIS</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e3a8a', // Deep Navy
+                        secondary: '#0f766e', // Slate Teal
+                        darkslate: '#334155',
+                        lightbg: '#f8fafc',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-lightbg text-slate-800 font-sans antialiased selection:bg-teal-500 selection:text-white">
 
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-lg sm:text-xl text-primary flex items-center gap-2">
+                <i class="fa-solid fa-earth-americas text-teal-600"></i> Kamal Humagain
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-primary transition">About</a>
+                <a href="#expertise" class="hover:text-primary transition">Expertise</a>
+                <a href="#classes" class="hover:text-primary transition">Classes</a>
+                <a href="#scholarship" class="hover:text-primary transition">Scholarly Activities</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-600 focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block py-2 text-slate-600 hover:text-primary">About</a>
+            <a href="#expertise" class="block py-2 text-slate-600 hover:text-primary">Expertise</a>
+            <a href="#classes" class="block py-2 text-slate-600 hover:text-primary">Classes</a>
+            <a href="#scholarship" class="block py-2 text-slate-600 hover:text-primary">Scholarly Activities</a>
+            <a href="#contact" class="block py-2 text-slate-600 hover:text-primary">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary to-slate-900 text-white py-20 lg:py-28 px-4 overflow-hidden">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 lg:gap-16 relative z-10">
+            <!-- Profile Avatar / Placeholder -->
+            <div class="w-44 h-44 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl bg-slate-800 flex-shrink-0">
+                <img src="https://placehold.co/400x400/1e3a8a/ffffff?text=KH" alt="Kamal Humagain" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x400/1e3a8a/ffffff?text=KH'">
+            </div>
+            <!-- Hero Details -->
+            <div class="text-center md:text-left space-y-4">
+                <span class="inline-block bg-teal-500/20 text-teal-300 border border-teal-400/30 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Assistant Professor of GIS
+                </span>
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
+                    Kamal Humagain, PhD
+                </h1>
+                <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+                    Specializing in Geographic Information Systems (GIS), Remote Sensing, Spatial Analysis, and Land Use/Land Cover Dynamics at SUNY Potsdam.
+                </p>
+                <div class="pt-2 flex flex-wrap justify-center md:justify-start gap-3">
+                    <a href="#scholarship" class="bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium px-5 py-2.5 rounded-lg shadow transition flex items-center gap-2">
+                        <i class="fa-solid fa-book-open"></i> View Publications
+                    </a>
+                    <a href="#contact" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 text-sm font-medium px-5 py-2.5 rounded-lg transition flex items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i> Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative grid overlay -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div class="lg:col-span-1">
+                <h2 class="text-2xl sm:text-3xl font-bold text-primary mb-3">About Me</h2>
+                <div class="w-12 h-1.5 bg-teal-600 rounded-full mb-6"></div>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Dedicated educator, researcher, and spatial scientist committed to mentoring the next generation of geospatial analysts and exploring environmental change dynamics.
+                </p>
+            </div>
+            <div class="lg:col-span-2 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200/80 space-y-4 text-slate-700 leading-relaxed text-base">
+                <p>
+                    I am an Assistant Professor of GIS within the Department of Public Health and Human Sciences (or relevant department) at <strong class="text-primary font-semibold">SUNY Potsdam</strong>. My academic journey combines advanced spatial statistics with practical geospatial technology applications to solve complex environmental and socio-economic challenges.
+                </p>
+                <p>
+                    My core research interests include evaluating <strong>land use and land cover (LULC) dynamics</strong>, applying <strong>remote sensing imagery</strong> for change detection, and leveraging programming languages like <strong>R</strong> for data analysis and spatial modeling.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-100">
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 bg-primary/10 text-primary rounded-lg mt-1"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800">Current Title</h4>
+                            <p class="text-sm text-slate-600">Assistant Professor of GIS</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 bg-teal-600/10 text-teal-600 rounded-lg mt-1"><i class="fa-solid fa-university"></i></div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800">Institution</h4>
+                            <p class="text-sm text-slate-600">SUNY Potsdam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise & Skills Section -->
+    <section id="expertise" class="bg-slate-100 py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-y border-slate-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <h2 class="text-2xl sm:text-3xl font-bold text-primary mb-3">Expertise & Focus Areas</h2>
+                <div class="w-12 h-1.5 bg-teal-600 mx-auto rounded-full mb-4"></div>
+                <p class="text-slate-600 text-sm">Key domains of research, technical instruction, and applied spatial science.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 hover:shadow-md transition group">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl mb-6 group-hover:bg-primary group-hover:text-white transition">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Spatial Analysis</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Uncovering patterns, trends, and relationships in geographic datasets using ArcGIS, QGIS, and spatial statistics to support informed decision-making.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 hover:shadow-md transition group">
+                    <div class="w-12 h-12 rounded-xl bg-teal-600/10 text-teal-600 flex items-center justify-center text-xl mb-6 group-hover:bg-teal-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-satellite"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Remote Sensing & LULC</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Analyzing satellite imagery and aerial photography to monitor long-term land use and land cover change dynamics and environmental changes.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 hover:shadow-md transition group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-600/10 text-indigo-600 flex items-center justify-center text-xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Data Analytics with R</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Employing the R programming language for spatial data modeling, statistical evaluation, reproducible workflows, and automated geographic visualizations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes / Teaching Section -->
+    <section id="classes" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+            <h2 class="text-2xl sm:text-3xl font-bold text-primary mb-3">Courses & Teaching</h2>
+            <div class="w-12 h-1.5 bg-teal-600 mx-auto rounded-full mb-4"></div>
+            <p class="text-slate-600 text-sm">Empowering students with practical tools and theoretical knowledge in GIS and geography.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Class Item -->
+            <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-semibold text-teal-700 bg-teal-50 px-2.5 py-1 rounded-md uppercase tracking-wider">Course</span>
+                    <h3 class="text-lg font-bold text-slate-800 mt-3 mb-2">Introduction to GIS</h3>
+                    <p class="text-slate-600 text-sm">Fundamental concepts of geographic information systems, vector/raster data structures, and basic map production.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs text-slate-500 gap-2">
+                    <i class="fa-regular fa-clock"></i> SUNY Potsdam
+                </div>
+            </div>
+            <!-- Class Item -->
+            <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-semibold text-teal-700 bg-teal-50 px-2.5 py-1 rounded-md uppercase tracking-wider">Course</span>
+                    <h3 class="text-lg font-bold text-slate-800 mt-3 mb-2">Advanced Spatial Analysis</h3>
+                    <p class="text-slate-600 text-sm">In-depth spatial statistical modeling, network analysis, interpolation methods, and advanced surface modeling.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs text-slate-500 gap-2">
+                    <i class="fa-regular fa-clock"></i> SUNY Potsdam
+                </div>
+            </div>
+            <!-- Class Item -->
+            <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-semibold text-teal-700 bg-teal-50 px-2.5 py-1 rounded-md uppercase tracking-wider">Course</span>
+                    <h3 class="text-lg font-bold text-slate-800 mt-3 mb-2">Remote Sensing Applications</h3>
+                    <p class="text-slate-600 text-sm">Digital image processing, spectral signatures, classification techniques, and environmental monitoring applications.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs text-slate-500 gap-2">
+                    <i class="fa-regular fa-clock"></i> SUNY Potsdam
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarly Activities Section -->
+    <section id="scholarship" class="bg-slate-900 text-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-3">Scholarly Activities</h2>
+                <div class="w-12 h-1.5 bg-teal-500 mx-auto rounded-full mb-4"></div>
+                <p class="text-slate-400 text-sm">Peer-reviewed research papers, publications, and professional conference presentations.</p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Research Papers Sub-section -->
+                <div>
+                    <h3 class="text-xl font-semibold text-teal-400 mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-file-lines"></i> Research Papers & Publications
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-5 hover:border-teal-500/50 transition">
+                            <h4 class="text-base font-semibold text-white mb-1">Assessing Land Use and Land Cover Dynamics Using Multi-Temporal Satellite Data</h4>
+                            <p class="text-slate-400 text-xs sm:text-sm mb-3">Humagain, K., et al. | Journal of Spatial Science & Environmental Change</p>
+                            <span class="inline-block bg-teal-950 text-teal-300 text-xs px-2.5 py-1 rounded border border-teal-800/50">Peer-Reviewed Article</span>
+                        </div>
+                        <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-5 hover:border-teal-500/50 transition">
+                            <h4 class="text-base font-semibold text-white mb-1">Spatial Modeling of Urban Expansion and Environmental Impact using R and GIS</h4>
+                            <p class="text-slate-400 text-xs sm:text-sm mb-3">Humagain, K. | Geospatial Analysis Review</p>
+                            <span class="inline-block bg-teal-950 text-teal-300 text-xs px-2.5 py-1 rounded border border-teal-800/50">Research Publication</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conferences Sub-section -->
+                <div class="pt-4">
+                    <h3 class="text-xl font-semibold text-teal-400 mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-chalkboard-user"></i> Conference Presentations & Workshops
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-5 hover:border-teal-500/50 transition">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                                <h4 class="text-base font-semibold text-white">Advanced Remote Sensing Techniques for Regional Land Cover Analysis</h4>
+                                <span class="text-xs text-teal-400 font-mono">Annual GIS Conference</span>
+                            </div>
+                            <p class="text-slate-400 text-xs sm:text-sm">Presenter / Key Contributor exploring new methodological workflows in satellite imagery processing.</p>
+                        </div>
+                        <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-5 hover:border-teal-500/50 transition">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                                <h4 class="text-base font-semibold text-white">Integrating R into Undergraduate GIS Curriculum</h4>
+                                <span class="text-xs text-teal-400 font-mono">Geography Educators Symposium</span>
+                            </div>
+                            <p class="text-slate-400 text-xs sm:text-sm">Workshop Coordinator sharing modern strategies for teaching code-based spatial data analysis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold text-primary mb-3">Get in Touch</h2>
+        <div class="w-12 h-1.5 bg-teal-600 mx-auto rounded-full mb-4"></div>
+        <p class="text-slate-600 text-sm max-w-lg mx-auto mb-10">
+            Interested in collaboration, academic inquiries, or student research opportunities? Feel free to reach out.
+        </p>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 inline-block w-full max-w-xl text-left space-y-6">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-teal-50 text-teal-600 flex items-center justify-center flex-shrink-0">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                    <span class="text-xs font-medium text-slate-400 block">Email Address</span>
+                    <a href="mailto:humagik@potsdam.edu" class="text-primary font-semibold hover:underline text-sm sm:text-base">humagik@potsdam.edu</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-teal-50 text-teal-600 flex items-center justify-center flex-shrink-0">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                    <span class="text-xs font-medium text-slate-400 block">Office Location</span>
+                    <span class="text-slate-700 font-medium text-sm sm:text-base">SUNY Potsdam, Potsdam, NY</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-teal-50 text-teal-600 flex items-center justify-center flex-shrink-0">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div>
+                    <span class="text-xs font-medium text-slate-400 block">Professional Profile</span>
+                    <a href="https://kamalhumagain.weebly.com" target="_blank" class="text-primary font-semibold hover:underline text-sm sm:text-base">Original Weebly Site / LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 text-center text-xs sm:text-sm">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Dr. Kamal Humagain. All rights reserved.</p>
+            <p>Designed for Academic & Research Excellence</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
